@@ -19,7 +19,7 @@ public class AppTest
  @Test
  public void testEmptyList(){
   int  List = 0;
-  ReadingList rl = new Book();
+  ReadingList rl = new ReadingList();
   int result = rl.numberRead();   
   assertEquals(List, result);
  }
