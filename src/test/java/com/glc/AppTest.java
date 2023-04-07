@@ -1,5 +1,5 @@
 package com.glc;
-
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
@@ -9,12 +9,22 @@ import org.junit.Test;
  */
 public class AppTest 
 {
-    /**
-     * Rigorous Test :-)
-     */
+   
     @Test
     public void shouldAnswerWithTrue()
     {
         assertTrue( true );
     }
+
+ @Test
+ public void testEmptyList(){
+  int  List = 0;
+  ReadingList rl = new Book();
+  int result = rl.numberRead();   
+  assertEquals(List, result);
+ }
+   
+
+
+    
 }
