@@ -18,10 +18,20 @@ public class AppTest
 
  @Test
  public void testEmptyList(){
-  int  List = 0;
+  int  ListSize = 0;
   ReadingList rl = new ReadingList();
   int result = rl.numberRead();   
-  assertEquals(List, result);
+  assertEquals(ListSize, result);
+ }
+
+ @Test
+ public void testBookRead(){
+  int Listsize = 1;
+ Book objBook = new Book("abc","huda",204,2019);
+ ReadingList rl = new ReadingList();
+ rl.addBook(objBook, "January-09-2020", 67);
+ int result = rl.numberRead(); 
+  assertEquals(Listsize,result);
  }
    
 
