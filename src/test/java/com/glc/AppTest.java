@@ -42,7 +42,7 @@ public void testTotalBooks(){
     Book objBook4 = new Book("jfij","hunaid",245,2018);
     
     ReadingList rl = new ReadingList();
-r.addBook(objBook1, " January-09-2020", 67);
+rl.addBook(objBook1, " January-09-2020", 67);
 rl.addBook(objBook2,"January-09-2020", 67);
 rl.addBook(objBook3, "January-09-2020", 67);
 
