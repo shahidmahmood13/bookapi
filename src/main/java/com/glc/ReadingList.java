@@ -36,6 +36,17 @@ return bookList.size();
 
     
 }
+public void RemoveBook(String title){
+
+    for(int i= 0 ; i<bookList.size(); i++){
+        if(bookList.contains(title)){
+            
+            bookList.remove(i);
+        }
+       
+    }
+    
+}
 
 
 }

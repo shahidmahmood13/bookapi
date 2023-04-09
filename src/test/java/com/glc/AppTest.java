@@ -1,5 +1,6 @@
 package com.glc;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 
@@ -51,6 +52,13 @@ int result = rl.numberRead();
 assertEquals(Listsize,result);
 
 }
-
+@Test
+public void testRemoveBook(){
     
+    String title="abc";
+    ReadingList rl= new ReadingList();
+  
+    assertFalse(rl.bookList.contains(title));
+
+}
 }
